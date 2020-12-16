@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="tutorial" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+
+</head>
+<body>
+    <div>
+	    <label>Имя:</label>
+	    <input type="text" ng-model="yourName">
+	    <hr>
+	    <h1>Привет,  { { yourName  } }!</h1>
+    </div>
+
+    <div ng-controller="defaultCtrl">
+	    <label>Имя:</label>
+	    <input type="text" ng-model="yourName">
+	    <hr>
+	    <h1>Привет,  { { yourName  } }!</h1>
+		<button ng-click="sayHello(yourName)">Сказать привет</button>
+    </div>
+    
+</body>
+</html>
